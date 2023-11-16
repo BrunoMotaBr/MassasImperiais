@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("./imgs/FundoGold.jpg");
+    background-position: center;
+    margin-bottom: 100px;
+    border-bottom: 3px #FF0000 solid;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+header nav{
+    display: flex;
+    gap: 30px;
+}
+
+header nav a{
+    cursor: pointer;
+    font-weight: bold;
+    color: #FFF;
+}
+
+header nav p{
+    color: #FFF;
+    font-size: larger;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    flex: 1;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.cards-card{
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    border: 2px #CCCCCC solid;
+}
+
+.cards-card img{
+    border-bottom: 2px #000 solid;
+    width: 100%;
+    height: 80%;
+}
+
+.card-botao-texto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textoDestaque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #FFF;
+    background-color: #000;
+    margin-bottom: 100px;
+}
+
+.caixa-imagens{
+    display: flex;
+    justify-content: center;
+}
+
+.imagens{
+    border: 2px #000 solid;
+    height: 600px;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.imagens img{
+    width: 100%;
+    height: 100%;
+}
+
+.icone-Flutuante{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.icone-Flutuante img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #C0FF0c;
+}
+
+.caixa-mapa{
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+section iframe{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.caixa-horarios{
+    background-color: #222222;
+    height: 250px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+    font-size: 24px;
+}
+
+.caixa-horarios img{
+    width: 200px;
+    height: 200px;
+    background-color: #FFF;
+    border-radius: 100%;
+}
+
+footer{
+    height: 150px;
+    background-color: rgb(243, 184, 35);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 50px;
+    border-radius: 100%;
+    height: 50px;
+}
+
+.links-footer{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.links-footer:hover{
+    text-decoration: underline;
+}
+
+.icone-redes-sociais{
+    width: 30px;
+}
