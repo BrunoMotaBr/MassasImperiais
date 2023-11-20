@@ -1,3 +1,5 @@
+@import url("./styleMobile.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -170,3 +172,4 @@ footer{
 .icone-redes-sociais{
     width: 30px;
 }
+
