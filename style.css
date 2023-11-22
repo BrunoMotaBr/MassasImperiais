@@ -3,6 +3,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 body{
@@ -14,10 +16,11 @@ header{
     height: 100px;
     justify-content: space-around;
     align-items: center;
-    background-image: url("./imgs/FundoGold.jpg");
+    background-color: #fbead5;
     background-position: center;
     margin-bottom: 100px;
     border-bottom: 3px #FF0000 solid;
+    color: #EF8D0A;
 }
 
 header img{
@@ -33,11 +36,9 @@ header nav{
 header nav a{
     cursor: pointer;
     font-weight: bold;
-    color: #FFF;
 }
 
 header nav p{
-    color: #FFF;
     font-size: larger;
 }
 
@@ -58,18 +59,19 @@ header nav a:hover{
 .cards-card{
     text-align: center;
     height: 300px;
-    width: 400px;
-    border: 2px #CCCCCC solid;
+    width: 250px;
 }
 
-.cards-card img{
+.card-img{
     border-bottom: 2px #000 solid;
     width: 100%;
     height: 80%;
 }
 
 .card-botao-texto{
-    display: flex;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
     justify-content: space-around;
     align-items: center;
 }
@@ -80,7 +82,7 @@ header nav a:hover{
     align-items: center;
     height: 100px;
     color: #FFF;
-    background-color: #000;
+    background-color: #B54041;
     margin-bottom: 100px;
 }
 
@@ -90,15 +92,54 @@ header nav a:hover{
 }
 
 .imagens{
-    border: 2px #000 solid;
-    height: 600px;
-    width: 80%;
+    border: 2px #B54041 solid;
+    height: 300px;
+    width: 50%;
     margin-bottom: 100px;
+    border-radius: 16px;
 }
 
 .imagens img{
     width: 100%;
     height: 100%;
+}
+
+.caixa-mapa{
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+section iframe{
+    width: 65%;
+    margin-bottom: 100px;
+    border-radius: 16px;
+}
+
+.caixa-horarios{
+    background-color: #B54041;
+    height: 250px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+    font-size: 24px;
+}
+
+.caixa-horarios img{
+    width: 150px;
+    height: 150px;
+    background-color: #FFF;
+    border-radius: 100%;
+}
+
+.cards-completos{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    height: 100vh;
+    margin: 0 20px 100px 20px;
 }
 
 .icone-Flutuante{
@@ -114,36 +155,8 @@ header nav a:hover{
     background-color: #C0FF0c;
 }
 
-.caixa-mapa{
-    display: flex;
-    justify-content: center;
-    padding: 0 10%;
-}
-
-section iframe{
-    width: 100%;
-    margin-bottom: 100px;
-}
-
-.caixa-horarios{
-    background-color: #222222;
-    height: 250px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #FFF;
-    font-size: 24px;
-}
-
-.caixa-horarios img{
-    width: 200px;
-    height: 200px;
-    background-color: #FFF;
-    border-radius: 100%;
-}
-
 footer{
+    border-top: 2px solid #F00;
     height: 150px;
     background-color: rgb(243, 184, 35);
     display: flex;
@@ -155,6 +168,17 @@ footer{
     width: 50px;
     border-radius: 100%;
     height: 50px;
+}
+
+.Logo-nome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px
+}
+
+.Logo-nome h3{
+    font-weight: 100;
 }
 
 .links-footer{
