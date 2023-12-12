@@ -33,17 +33,21 @@ header nav{
     gap: 30px;
 }
 
-header nav a{
+a{
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
+    color: #F3B823;
+}
+
+a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+    color: #F00;
 }
 
 header nav p{
     font-size: larger;
-}
-
-header nav a:hover{
-    text-decoration: underline;
 }
 
 .cards{
